@@ -1,4 +1,4 @@
-
+import { GetData, PostData } from "../utils/callApi.js"
 
 
 
@@ -20,9 +20,8 @@ form.onsubmit = async (e) => {
 
 
     if (user.email && user.name && user.surname && user.password !== "") {
-    
+       await PostData("/users",user)
     }
-console.log(user);
 
 
 
@@ -31,7 +30,7 @@ console.log(user);
 
 
 
- 
+ export const users = await GetData("/users")
  
  
 
