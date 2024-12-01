@@ -5,6 +5,80 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: aliceblue;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.head {
+   
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: Gilroy;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.41px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            transition: .5s ease;
+
+        }
+        a:hover{
+            color:rgb(50, 50, 245) ;
+            text-shadow: 5px 3px 4px  blueviolet;
+        }
+    }
+
+    .user_data {
+       
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        h2 {
+            font-family: Gilroy;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.41px;
+            text-align: right;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            cursor: pointer;
+            transition: .4s;
+
+        }
+        h2:hover{
+            color:rgb(50, 50, 245) ;
+            text-shadow: 5px 3px 4px  blueviolet;
+        }
+        img{
+            transition: .4s ease;
+
+        }
+        img:hover{
+            text-shadow: 5px 3px 4px  blueviolet;
+            transform: scale(1.2);
+            
+        }
+
+    }
+
+}
 
 .container {
     width: 1100px;
