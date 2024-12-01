@@ -19,9 +19,7 @@ form.onsubmit = async (e) => {
     }
 
 
-    if (user.email && user.name && user.surname && user.password !== "") {
     
-    }
 console.log(user);
 
 
