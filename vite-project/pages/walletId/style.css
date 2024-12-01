@@ -1,0 +1,105 @@
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.my_wallet {
+    margin: 0 auto;
+    padding-top: 44px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59.42px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000;
+    padding-bottom: 11px;
+}
+
+.gmail {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0073e6;
+    text-decoration: none;
+    padding-bottom: 1011px;
+}
+
+
+
+ 
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    padding-top: 60px;
+} 
+
+.card {
+    padding-top: 19px;
+    width: 282px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 19px;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
+}
+
+.card_p {
+    padding-left: 23px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.33px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.card_h2 {
+    padding-left: 23px;
+    padding-bottom: 75px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.add {
+    width: 438px;
+    height: 56px;
+    border: 0;
+    background-color: #0047FF;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 44px;
+}

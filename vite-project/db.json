@@ -1,14 +1,7 @@
 {
-  "todos": [],
-  "users": [
-    {
-      "id": "d3445a64-7b20-482f-b931-7d23843b8b6b",
-      "email": "islam2000jan@gmail.com",
-      "name": "TOSHp'ulat",
-      "surname": "Kayfullaev",
-      "password": "islam"
-    }
-    
-  ],
-  "cards": []
+    "id": [],
+    "wallet": [],
+    "category": [],
+    "sum": [],
+    "when": []
 }
