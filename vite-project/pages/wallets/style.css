@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome {
+    margin: 0 auto;
+    padding-top: 44px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59.42px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000;
+    padding-bottom: 11px;
+}
+
+.my_gmail {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.my_wallets {
+    padding-top: 74px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-bottom: 21px;
+}
+
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.card {
+    width: 282px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
+}
+
+.card_p {
+    margin-bottom: 19px;
+    padding-left: 23px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.33px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.card_h2 {
+    padding-left: 23px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.view_all {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.6px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-decoration: none;
+    color: #0047FF;
+    padding-bottom: 74px;
+}
+
+
+
+

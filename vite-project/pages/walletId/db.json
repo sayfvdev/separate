@@ -1,6 +1,7 @@
 [
-    { "title": "Visa", "currency": "RUB" },
+    { "title": "Visa", "currency": "RUB" }, 
     { "title": "MasterCard", "currency": "USD" },
     { "title": "Amex", "currency": "EUR" },
+    { "title": "HUMO", "currency": "SUM" },
     { "title": "HUMO", "currency": "SUM" }
 ]
