@@ -1,3 +1,8 @@
+
+
+
+
+
 export function Header(item) {
     const head = document.createElement('div')
     const nav_menu = document.createElement('nav')
@@ -35,6 +40,7 @@ head.append(nav_menu,user_data,)
 nav_menu.append(main,wallets,tranzactions,register_link)
 user_data.append(h2,icon)
 icon.append(img)
+
 
 return head
 }
