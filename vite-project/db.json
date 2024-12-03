@@ -2,19 +2,23 @@
   "wallets": [
     {
       "title": "Visa",
-      "currency": "RUB"
+      "currency": "RUB",
+      "id": "83e0"
     },
     {
       "title": "MasterCard",
-      "currency": "USD"
+      "currency": "USD",
+      "id": "3227"
     },
     {
       "title": "Amex",
-      "currency": "EUR"
+      "currency": "EUR",
+      "id": "4790"
     },
     {
       "title": "HUMO",
-      "currency": "SUM"
+      "currency": "SUM",
+      "id": "10dd"
     }
   ],
   "users": [
@@ -24,6 +28,13 @@
       "name": "TOSHp'ulat",
       "surname": "Kayfullaev",
       "password": "islam"
+    },
+    {
+      "id": "6e47e2eb-72b7-44fe-afe2-74f5af6128d2",
+      "email": "dsarifkulo021@gmail.com",
+      "name": "Daler",
+      "surname": "Daler",
+      "password": "MTIzNDU2Nzg="
     }
   ]
 }
