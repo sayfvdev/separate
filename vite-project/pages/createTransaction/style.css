@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+
+}
+
+.register_container {
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    h2 {
+        font-family: Gilroy;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59.42px;
+
+
+        text-decoration-skip-ink: none;
+
+    }
+
+    input {
+        width: 438px;
+        height: 56px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        font-family: Gilroy;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.6px;
+
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        transition: 0.4s ease;
+        border: 1px ease #000000
+    }
+
+    input:hover {
+        transform: scale(1.02);
+    }
+
+    button {
+        width: 438px;
+        height: 56px;
+        background: #0047FF;
+        border-radius: 15px;
+        border: none;
+        color: white;
+        transition: .5s;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+
+    a {
+        text-decoration: none;
+        color: #0047FF;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22.28px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

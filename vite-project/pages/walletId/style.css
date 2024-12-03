@@ -103,3 +103,10 @@
     cursor: pointer;
     margin-top: 44px;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
