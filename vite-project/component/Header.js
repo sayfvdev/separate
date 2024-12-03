@@ -23,8 +23,8 @@ user_data.classList.add("user_data")
 main.href = ""
 wallets.href = ""
 tranzactions.href = ""
-icon.href = ""
-register_link.href = "pages/signup/idnex.html"
+icon.href = "pages/signup/idnex.html"
+
 
 img.src = "../public/icons/log-out (1) 1.png"
 
@@ -37,7 +37,7 @@ h2.innerText = item.email
 register_link.innerText = "register"
 
 head.append(nav_menu,user_data,)
-nav_menu.append(main,wallets,tranzactions,register_link)
+nav_menu.append(main,wallets,tranzactions)
 user_data.append(h2,icon)
 icon.append(img)
 
