@@ -1,11 +1,23 @@
 {
-    "wallets": [
-    { "title": "Visa", "currency": "RUB" }, 
-    { "title": "MasterCard", "currency": "USD" },
-    { "title": "Amex", "currency": "EUR" },
-    { "title": "HUMO", "currency": "SUM" }
-],
- "users": [
+  "wallets": [
+    {
+      "title": "Visa",
+      "currency": "RUB"
+    },
+    {
+      "title": "MasterCard",
+      "currency": "USD"
+    },
+    {
+      "title": "Amex",
+      "currency": "EUR"
+    },
+    {
+      "title": "HUMO",
+      "currency": "SUM"
+    }
+  ],
+  "users": [
     {
       "id": "d3445a64-7b20-482f-b931-7d23843b8b6b",
       "email": "islam2000jan@gmail.com",
@@ -13,4 +25,5 @@
       "surname": "Kayfullaev",
       "password": "islam"
     }
-  ]}
+  ]
+}
