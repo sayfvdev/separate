@@ -4,11 +4,11 @@ export default function Сard(item) {
 
     const cardTitle = document.createElement("h2");
     cardTitle.classList.add("card_h2")
-    cardTitle.textContent = "islom";
+    cardTitle.textContent = "item.title";
     
     const cardCurrency = document.createElement("p");
     cardCurrency.classList.add("card_p")
-    cardCurrency.textContent = "jasur";
+    cardCurrency.textContent = "item.currency";
 
     card.append(cardTitle);
     card.append(cardCurrency);
