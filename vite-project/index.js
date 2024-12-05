@@ -1,16 +1,13 @@
-import  Card  from './component/Card.js';
-import { Header } from './component/Header.js';
-import  Transactions  from './component/Transactions.js';
+import Card from './components/Card';
+import { Header } from './components/Header';
+import Transactions from './components/Transactions';
+import reload from "./utils/reload"
 
 
-Transactions();
-
-import { users } from "./utils/db.js"
-import { wallets } from "./utils/db.js";
-import reload from "./utils/reload.js"
-
-const place = document.querySelector('.container')
+const body = document.body
 const cardContainer = document.querySelector('#cardContainer')
-reload(users,Header,place)
-reload(wallets,Card, cardContainer)
-function custom() {}
+
+body.prepend(Header({email: "example@gmail.com"}))
+
+reload(wallets, Card, cardContainer)
+// reload(wallets, Transactions, cardContainer)

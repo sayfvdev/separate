@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 1100px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -212,10 +212,11 @@ body{
 }
 
 .head {
-   
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
 
     nav {
         display: flex;

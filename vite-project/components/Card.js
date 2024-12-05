@@ -3,13 +3,15 @@ export default function Сard(item) {
     card.classList.add("card");
 
     const cardTitle = document.createElement("h2");
-    cardTitle.textContent = "Visa";
-
+    cardTitle.classList.add("card_h2")
+    cardTitle.textContent = item.title;
+    
     const cardCurrency = document.createElement("p");
-    cardCurrency.textContent = "RUB";
+    cardCurrency.classList.add("card_p")
+    cardCurrency.textContent = item.currency;
 
     card.append(cardTitle);
     card.append(cardCurrency);
 
-    return card
+    return card;
 }

@@ -2,35 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-  <section class="header">
-    <div class="container">
+	<div class="cardContainer">
+		<div class="my_wallet">
+			<h1 class="welcome">Добро пожаловать, Alex Adams!</h1>
+			<a class="my_gmail" href="#">alexadams@google.com</a>
+			<h2 class="my_wallets">Мои кошельки</h2>
+			<div id="cardContainer"></div>
+			<a class="view_all" href="/pages/wallets/">Смотреть все кошельки</a>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Wallet</th>
+					<th>Category</th>
+					<th>Total</th>
+					<th>Date</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
 
-      <a href="/separate/vite-project/pages/signup/idnex.html">перенос на Регистрация</a>
-    </div>
-  </section>
 
 
-  <div class="cardContainer">
-    <div class="my_wallet">
-      <h1 class="welcome">Добро пожаловать, Alex Adams!</h1>
-      <a class="my_gmail" href="#">alexadams@google.com</a>
-      <h2 class="my_wallets">Мои кошельки</h2>
-      <div id="cardContainer"></div>
-      <a class="view_all" href="./pages/walletId/idnex.html">Смотреть все кошельки</a>
-
-    </div>
-  </div>
-
-
-
-  <script type="module" src="./index.js"></script>
+	<script type="module" src="./index.js"></script>
 </body>
 
 </html>

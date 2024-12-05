@@ -1,17 +1,16 @@
-body {
+* {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.welcome {
+.my_wallet {
     margin: 0 auto;
     padding-top: 44px;
     font-size: 48px;
@@ -24,7 +23,7 @@ body {
     padding-bottom: 11px;
 }
 
-.my_gmail {
+.gmail {
     font-size: 18px;
     font-weight: 700;
     line-height: 22.28px;
@@ -33,27 +32,22 @@ body {
     text-decoration-skip-ink: none;
     color: #0073e6;
     text-decoration: none;
+    padding-bottom: 1011px;
 }
 
-.my_wallets {
-    padding-top: 74px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29.11px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    padding-bottom: 21px;
-}
 
+
+ 
 #cardContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    justify-content: center;
-}
+    align-items: center;
+    padding-top: 60px;
+} 
 
 .card {
+    padding-top: 19px;
     width: 282px;
     height: 160px;
     justify-content: center;
@@ -63,6 +57,7 @@ body {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
+    padding-bottom: 19px;
 }
 
 .card:nth-child(2) {
@@ -78,7 +73,6 @@ body {
 }
 
 .card_p {
-    margin-bottom: 19px;
     padding-left: 23px;
     font-size: 14px;
     font-weight: 700;
@@ -90,7 +84,7 @@ body {
 
 .card_h2 {
     padding-left: 23px;
-    padding-bottom: 60px;
+    padding-bottom: 75px;
     font-size: 24px;
     font-weight: 500;
     line-height: 29.11px;
@@ -99,22 +93,20 @@ body {
     text-decoration-skip-ink: none;
 }
 
-.view_all {
-    display: block;
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.6px;
-    text-align: left;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    text-decoration: none;
-    color: #0047FF;
-    padding-bottom: 74px;
+.add {
+    width: 438px;
+    height: 56px;
+    border: 0;
+    background-color: #0047FF;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 44px;
 }
-
-
-
-
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
