@@ -11,7 +11,7 @@ form.onsubmit = async (e) => {
     const fm = new FormData(form);
     fm.forEach((value, key) => user[key] = value);
 
-    // Проверка email в базе данных
+ 
     const { data } = await api_call.getData(`/users?email=${user.email}`);
 
     if (data.length === 0) {
@@ -20,6 +20,6 @@ form.onsubmit = async (e) => {
         alert("Неверный пароль!");
     } else {
         alert("Вход успешен!");
-        window.location.href = "/main.html";  // Переход на основную страницу
+        window.location.href = "/main.html"; 
     }
 };

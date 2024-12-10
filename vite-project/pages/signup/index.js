@@ -13,7 +13,7 @@ form.onsubmit = async (e) => {
     const fm = new FormData(form);
     fm.forEach((value, key) => user[key] = value);
 
-    // Проверка существующего email
+   
     const { data } = await api_call.getData(`/users?email=${user.email}`);
 
     if (data.length > 0) {
