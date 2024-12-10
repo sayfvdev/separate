@@ -18,7 +18,6 @@ export function Header(item) {
     main.href = "/"
     wallets.href = "/pages/wallets/"
     transactions.href = "/pages/transactions/"
-    icon.href = "/pages/signup/"
 
 
     img.src = "/icons/log-out.png"
@@ -36,7 +35,10 @@ export function Header(item) {
     user_data.append(h2, icon)
     icon.append(img)
 
-
+    icon.onclick = () => {
+        localStorage.clear()
+        location.assign('/pages/signin/')
+    }
 
     return head
 }

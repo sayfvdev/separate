@@ -19,7 +19,9 @@ form.onsubmit = async (e) => {
     } else if (data[0].password !== user.password) {
         alert("Неверный пароль!");
     } else {
+        delete data[0].password
+        localStorage.setItem('user', JSON.stringify(data[0]))
         alert("Вход успешен!");
-        window.location.href = "/main.html"; 
+        location.assign('/')
     }
 };

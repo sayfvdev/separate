@@ -1,4 +1,4 @@
-export default function Transactions(item) {
+export function Transaction(item) {
     const tr = document.createElement("tr")
     const tb_id = document.createElement("th")
     const tb_wallet = document.createElement("th")

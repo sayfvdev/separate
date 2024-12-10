@@ -1,26 +1,21 @@
 {
   "wallets": [
     {
-      "title": "Visa",
-      "currency": "RUB",
-      "id": "83e0"
+      "id": "edea4fa2-f9a8-4472-b753-e15c2c8c9403",
+      "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
+      "name": "Main",
+      "currency": "UZS",
+      "total": "900000"
     },
     {
-      "title": "MasterCard",
+      "id": "6c5cecad-4379-429c-b957-0aaa6c8c206a",
+      "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
+      "name": "Secondary",
       "currency": "USD",
-      "id": "3227"
-    },
-    {
-      "title": "Amex",
-      "currency": "EUR",
-      "id": "4790"
-    },
-    {
-      "title": "HUMO",
-      "currency": "SUM",
-      "id": "10dd"
+      "total": "10000"
     }
   ],
+  "transactions": [],
   "users": [
     {
       "id": "4fee59bc-67ed-47e2-851e-6b1a9ae361e3",
@@ -28,6 +23,20 @@
       "name": "TOSHp'ulat",
       "surname": "islom",
       "password": "123124"
+    },
+    {
+      "id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
+      "email": "dsarifkulo021@gmail.com",
+      "name": "Daler",
+      "surname": "Daler",
+      "password": "1234Daler"
+    },
+    {
+      "id": "b9bca2ba-c92f-4d0b-b4c1-fc5c6ed4c9ea",
+      "email": "dsarifkulo022@gmail.com",
+      "name": "Daler",
+      "surname": "Daler",
+      "password": "1234Daler"
     }
   ]
 }
