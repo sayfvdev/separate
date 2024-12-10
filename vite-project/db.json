@@ -10,7 +10,7 @@
       "currency": "USD",
       "id": "3227"
     },
-    {
+    { 
       "title": "Amex",
       "currency": "EUR",
       "id": "4790"
@@ -26,15 +26,9 @@
       "id": "d3445a64-7b20-482f-b931-7d23843b8b6b",
       "email": "islam2000jan@gmail.com",
       "name": "TOSHp'ulat",
-      "surname": "Kayfullaev",
+      "surname": "Sayfullaev",
       "password": "islam"
-    },
-    {
-      "id": "6e47e2eb-72b7-44fe-afe2-74f5af6128d2",
-      "email": "dsarifkulo021@gmail.com",
-      "name": "Daler",
-      "surname": "Daler",
-      "password": "MTIzNDU2Nzg="
     }
+    
   ]
 }

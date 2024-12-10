@@ -1,3 +1,5 @@
+
+import { Header } from './components/Header';
 import { BASE_URL, CallApi } from './utils/apiHandler';
 const apiCall = new CallApi(BASE_URL)
 
