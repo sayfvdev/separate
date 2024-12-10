@@ -13,7 +13,7 @@ export class CallApi {
 
             if (res.status !== 200) throw new Error(res.statusText)
 
-            return res.data
+            return res
         } catch (error) { throw new Error(error.message) }
     }
     async postData(path, body) {
@@ -22,7 +22,7 @@ export class CallApi {
 
             if (res.status !== 201) throw new Error(res.statusText)
 
-            return res.data
+            return res
         } catch (error) { throw new Error(error.message) }
     }
     async patchData(path, body) {
@@ -31,7 +31,7 @@ export class CallApi {
 
             if (res.status !== 201) throw new Error(res.statusText)
 
-            return res.data
+            return res
         } catch (error) { throw new Error(error.message) }
     }
     async removeData(path) {
@@ -40,7 +40,7 @@ export class CallApi {
 
             if (res.status !== 201) throw new Error(res.statusText)
 
-            return res.data
+            return res
         } catch (error) { throw new Error(error.message) }
     }
 }
