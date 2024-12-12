@@ -23,7 +23,9 @@ form.onsubmit = async (e) => {
         user_id: userData.id,
         name: fm.get("name"),
         currency: fm.get("currency"),
-        total: fm.get("total")
+        total: fm.get("total"),   
+        created_at: new Date().toLocaleDateString(),
+        updated_at: new Date().toLocaleDateString(),
     }
 
     const res = await base_api_call.postData("/wallets", wallet)

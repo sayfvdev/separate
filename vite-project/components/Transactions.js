@@ -7,10 +7,10 @@ export function Transaction(item) {
     const tb_when = document.createElement("th")
 
     tb_id.innerText = item.id
-    tb_wallet.innerText = item.wallet
+    tb_wallet.innerText = item.wallet.name
     tb_categories.innerText = item.category
     tb_sum.innerText = item.total
-    tb_when.innerText = item.time
+    tb_when.innerText = item.created_at
 
     tr.append(tb_id, tb_wallet, tb_categories, tb_sum, tb_when)
 

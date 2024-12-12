@@ -30,7 +30,7 @@ export class CallApi {
                 }
             })
 
-            if (res.status !== 201) throw new Error(res.statusText)
+            if (res.status !== 201 && res.status !== 200) throw new Error(res.statusText)
 
             return res
         } catch (error) { throw new Error(error.message) }
@@ -43,7 +43,7 @@ export class CallApi {
                 }
             })
 
-            if (res.status !== 201) throw new Error(res.statusText)
+            if (res.status !== 201 && res.status !== 200) throw new Error(res.statusText)
 
             return res
         } catch (error) { throw new Error(error.message) }
@@ -56,7 +56,7 @@ export class CallApi {
                 }
             })
 
-            if (res.status !== 201) throw new Error(res.statusText)
+            if (res.status !== 201 && res.status !== 200) throw new Error(res.statusText)
 
             return res
         } catch (error) { throw new Error(error.message) }
