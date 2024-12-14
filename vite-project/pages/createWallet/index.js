@@ -1,3 +1,4 @@
+import { Header } from "../../components/Header";
 import { OptionComponent } from "../../components/Option";
 import { CallApi } from "../../utils/apiHandler"
 
@@ -37,3 +38,4 @@ form.onsubmit = async (e) => {
     }
     alert('Something went wrong!')
 }
+body.prepend(Header({email: localed.email}))
