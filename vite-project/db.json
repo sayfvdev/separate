@@ -5,17 +5,46 @@
       "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
       "name": "Main",
       "currency": "UZS",
-      "total": "900000"
+      "total": 285000
     },
     {
       "id": "6c5cecad-4379-429c-b957-0aaa6c8c206a",
       "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
       "name": "Secondary",
       "currency": "USD",
-      "total": "10000"
+      "total": 9000
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "id": "b5ee1066-4e21-4202-bd2e-b94166d5133c",
+      "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
+      "created_at": "12.12.2024",
+      "updated_at": "12.12.2024",
+      "walletId": "6c5cecad-4379-429c-b957-0aaa6c8c206a",
+      "total": "150",
+      "category": "Car",
+      "wallet": {
+        "name": "Secondary",
+        "currency": "USD",
+        "total": 9900
+      }
+    },
+    {
+      "id": "b90a7b9e-50ff-43f6-ada3-06258a1c97e4",
+      "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
+      "created_at": "12.12.2024",
+      "updated_at": "12.12.2024",
+      "walletId": "6c5cecad-4379-429c-b957-0aaa6c8c206a",
+      "total": "750",
+      "category": "Gift",
+      "wallet": {
+        "name": "Secondary",
+        "currency": "USD",
+        "total": 9750
+      }
+    }
+  ],
   "users": [
     {
       "id": "4fee59bc-67ed-47e2-851e-6b1a9ae361e3",

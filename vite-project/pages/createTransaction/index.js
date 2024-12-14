@@ -1,65 +1,44 @@
-// Импортируем необходимые компоненты и API обработчики
-import { Transaction } from "../../components/Transaction";
-import { CallApi } from "../../utils/apiHandler";
-import reload from "../../utils/reload";
+import { OptionComponent } from "../../components/Option"
+import { CallApi } from "../../utils/apiHandler"
 
-const form = document.forms.namedItem('createTransaction');
-const base_api_call = new CallApi(import.meta.env.VITE_PUBLIC_BASE_URL);
-const userData = JSON.parse(localStorage.getItem('user'));
+const form = document.forms.namedItem('create')
+
+const localed = JSON.parse(localStorage.getItem('user'))
+const api_call = new CallApi(import.meta.env.VITE_PUBLIC_BASE_URL)
+const wallets = await api_call.getData('/wallets?user_id=' + localed.id)
+
+for(let wallet of wallets.data) {
+    select.append(OptionComponent(`${wallet.name} - ${wallet.currency}: ${wallet.total}`, wallet.id))
+}
+
 
 form.onsubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const fm = new FormData(e.target);
-    const fromWallet = fm.get("fromWallet");
-    const moneyAmount = parseFloat(fm.get("moneyAmount"));
-    const category = fm.get("type");
-
-    if (!fromWallet || isNaN(moneyAmount) || !category) {
-        alert('Пожалуйста, заполните все поля корректно!');
-        return;
-    }
-
-   
-    const wallets = await base_api_call.getData(`/wallets?user_id=${userData.id}`);
-    const wallet = wallets.data.find(w => w.name === fromWallet);
-
-    if (!wallet) {
-        alert('Указанный кошелек не найден!');
-        return;
-    }
-
-    if (wallet.total < moneyAmount) {
-        alert('Недостаточно средств на кошельке!');
-        return;
-    }
-
-   
-    wallet.total -= moneyAmount;
-    await base_api_call.putData(`/wallets/${wallet.id}`, wallet);
-
-    
-    const transaction = {
+    const fm = new FormData(e.target)
+    const newTransaction = {
         id: crypto.randomUUID(),
-        wallet: wallet.name,
-        category,
-        total: moneyAmount,
-        time: new Date().toLocaleString(),
-        user_id: userData.id
-    };
-
-    const res = await base_api_call.postData("/transactions", transaction);
-
-    if (res.status === 201) {
-        form.reset();
-        
-        // Перезагружаем страницу транзакций
-        const tbody = document.querySelector('tbody');
-        const transactions = await base_api_call.getData(`/transactions?user_id=${userData.id}`);
-        reload(transactions.data, Transaction, tbody);
-        location.assign('/pages/transactions/');
-        return;
+        user_id: localed.id,
+        created_at: new Date().toLocaleDateString(),
+        updated_at: new Date().toLocaleDateString(),
     }
 
-    alert('Что-то пошло не так!');
-};
+    fm.forEach((val, key) => newTransaction[key] = val)
+
+    const wallet = wallets.data.find((w) => w.id === newTransaction.walletId)
+
+    if(!wallet) return // error handler
+    if(wallet.total < newTransaction.total) return // error handler 
+
+    delete wallet.id 
+    delete wallet.user_id
+    newTransaction.wallet = wallet
+    
+    await api_call.patchData('/wallets/' + newTransaction.walletId, {
+        total: wallet.total - newTransaction.total
+    })
+
+    await api_call.postData('/transactions', newTransaction)
+
+    location.assign('/pages/transactions/')
+}

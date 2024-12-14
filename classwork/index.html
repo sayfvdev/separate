@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="usersList">
+
+    </div>
+
+    <script type="module">
+
+    
+let selectedUser = null;
+
+function List(item) {
+    const ul = document.createElement('ul');
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+
+    a.href = "./second.html";
+    a.innerText = `${item.name}`;
+    
+  
+    a.addEventListener('click', () => {
+        selectedUser = item;
+    
+        localStorage.setItem('selectedUser', JSON.stringify(item));
+    });
+
+    ul.append(li);
+    li.append(a);
+
+    return ul;
+}
+
+async function fetchData() {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await res.json();
+
+    const place = document.querySelector('.usersList');
+    reload(users, List, place);
+}
+
+function reload(arr, component, place) {
+    for (const elem of arr) {
+        const item = component(elem);
+        place.append(item);
+    }
+}
+
+fetchData();
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
-    <div class="register_container">
-        <h2>Добавить транзакцию</h2>
-        <br><br>
-        <form name="createTransaction">
-          <input type="text" name="fromWallet" placeholder="Из кошелька" >
-          <br><br>
-          <input type="number" name="moneyAmount" placeholder="Сумма" >
-          <br><br>
-          <select name="type" id="type"></select>
-          <br><br>
-          <button><a href="/separate/vite-project/index.html">Добавить</a></button>
-        </form>
-      </div> 
-      
+	<div class="register_container">
+		<h2>Добавить транзакцию</h2>
+		<br><br>
+		<form name="create">
+			<select name="walletId" id="select">
+				<option value="not-selected" selected >not-selected</option>
+			</select>
+			<br><br>
+			<input id="hello" type="number" name="total" placeholder="Сумма">
+			<br><br>
+			<input type="text" name="category" placeholder="Категории">
+			<br><br>
+			<button>Добавить</button>
+		</form>
+	</div>
 
 
-    <script type="module" src="./index.js"></script>
+
+	<script type="module" src="./index.js"></script>
 </body>
+
 </html>
