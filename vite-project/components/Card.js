@@ -1,4 +1,4 @@
-export function Card(item) {
+export function Card(item) {    
     const card = document.createElement("div");
     card.classList.add("card");
 
@@ -11,7 +11,7 @@ export function Card(item) {
     cardCurrency.textContent = item.currency;
 
     card.onclick = (e) =>{
-        location.assign("/pages/walletId/")
+        location.assign("/pages/walletId/?id=" + item.id)
     }
 
     card.append(cardTitle);
