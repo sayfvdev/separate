@@ -5,7 +5,7 @@
       "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
       "name": "Main",
       "currency": "UZS",
-      "total": 285000
+      "total": 273000
     },
     {
       "id": "6c5cecad-4379-429c-b957-0aaa6c8c206a",
@@ -51,6 +51,20 @@
         "name": "Secondary",
         "currency": "USD",
         "total": 9750
+      }
+    },
+    {
+      "id": "b6462f5d-4148-4089-b04b-b12b22a20d06",
+      "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
+      "created_at": "14.12.2024",
+      "updated_at": "14.12.2024",
+      "walletId": "edea4fa2-f9a8-4472-b753-e15c2c8c9403",
+      "total": "12000",
+      "category": "PC club",
+      "wallet": {
+        "name": "Main",
+        "currency": "UZS",
+        "total": 285000
       }
     }
   ],

@@ -22,7 +22,12 @@ export function CardInfo(item) {
     card.append(icon,card_details)
     card_details.append(card_title,card_expiry)
 
+    card.onclick = () => {
+        card.classList.remove('selected')
+        card.classList.add('selected')
 
+        
+    }
 
     return card
 

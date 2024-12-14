@@ -24,7 +24,8 @@ for(let key in currencies.data.currencies) {
 
 
 
-body.prepend(Header({email: localed.email}))
+
+
 
 const wallets = await apiCall.getData('/wallets?user_id=' + localed.id)
 console.log(wallets.data);
@@ -49,7 +50,7 @@ if (wallets.data && wallets.data.length > 0) {
     mainSel.value = wallets.data[0].currency;
 }
 
-
+body.prepend(Header({email: localed.email}))
 reload(wallets.data, CardInfo, place)
 
 
