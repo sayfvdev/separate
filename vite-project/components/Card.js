@@ -10,6 +10,10 @@ export function Card(item) {
     cardCurrency.classList.add("card_p")
     cardCurrency.textContent = item.currency;
 
+    card.onclick = (e) =>{
+        location.assign("/pages/walletId/")
+    }
+
     card.append(cardTitle);
     card.append(cardCurrency);
 

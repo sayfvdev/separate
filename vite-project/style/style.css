@@ -57,53 +57,62 @@ body {
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
+    
+    
+    .card {
+        width: 282px;
+        height: 160px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+        border-radius: 15px;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: 0.5s ease;
+    }
+
+    .card:hover{
+        transform: translateY(-0.4cm);
+        cursor: pointer;
+    }
+    
+    .card:nth-child(2) {
+        background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
+    }
+    
+    .card:nth-child(3) {
+        background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
+    }
+    
+    .card:nth-child(4) {
+        background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
+    }
+    
+    .card_p {
+        margin-bottom: 19px;
+        padding-left: 23px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17.33px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    
+    .card_h2 {
+        padding-left: 23px;
+        padding-bottom: 60px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.11px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
 }
 
-.card {
-    width: 282px;
-    height: 160px;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
-    border-radius: 15px;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
 
-.card:nth-child(2) {
-    background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
-}
-
-.card:nth-child(3) {
-    background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
-}
-
-.card:nth-child(4) {
-    background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
-}
-
-.card_p {
-    margin-bottom: 19px;
-    padding-left: 23px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17.33px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
-
-.card_h2 {
-    padding-left: 23px;
-    padding-bottom: 60px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29.11px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
 
 .view_all {
     display: block;

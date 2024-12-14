@@ -4,22 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Payment Methods</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
   <div class="container">
-
-    <div class="my_wallet">
-      <h1 class="welcome">Добро пожаловать, Alex Adams!</h1>
-      <a class="my_gmail" href="#">alexadams@google.com</a>
-      <h2 class="my_wallets">Мои кошельки</h2>
-      <div id="cardContainer"></div>
-      <a class="view_all" href="../walletId/idnex.html">Смотреть все кошельки</a>
-
+    <div class="dashboard">
+      <h1>Dashboard</h1>
+      <div class="payment-methods">
+        <h2>Payment Methods</h2>
+        <div class="payment-cards">
+         
+        </div>
+      </div>
     </div>
+    <!-- Основной контейнер -->
+    <div class="main-container">
+      <!-- Блок Transaction History -->
+      <div class="block">
+        <h2>Transaction History</h2>
+        <div class="chart-container">
+          Graph Placeholder
+        </div>
+      </div>
 
+      <!-- Блок Currency Conversion -->
+      <div class="block">
+        <h2>Currency Conversion</h2>
+        <div class="conversion-form">
+          <select class="main_sel" disabled >
+           
+        
+          </select>
+          <select id="currency">
+            
+          </select>
+          <input type="number" class="currency_inp" disabled />
+          <button>Convert</button>
+        </div>
+      </div>
+
+     
+    </div>
   </div>
 
   <script type="module" src="./wallets.js"></script>
