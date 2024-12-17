@@ -12,7 +12,7 @@
       "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
       "name": "Secondary",
       "currency": "USD",
-      "total": 9000
+      "total": 8880
     },
     {
       "id": "7c0363e1-b04b-4ef8-8185-92e28f345758",
@@ -65,6 +65,20 @@
         "name": "Main",
         "currency": "UZS",
         "total": 285000
+      }
+    },
+    {
+      "id": "b682f67e-c1e3-4a40-a113-43b4a3325539",
+      "user_id": "4cdd8384-2d1e-47e8-8fae-b78754ae933a",
+      "created_at": "14.12.2024",
+      "updated_at": "14.12.2024",
+      "walletId": "6c5cecad-4379-429c-b957-0aaa6c8c206a",
+      "total": "120",
+      "category": "помощь бомжу (самиру)",
+      "wallet": {
+        "name": "Secondary",
+        "currency": "USD",
+        "total": 9000
       }
     }
   ],
