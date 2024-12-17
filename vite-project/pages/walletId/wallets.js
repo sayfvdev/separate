@@ -1,7 +1,5 @@
 import { CardInfo } from "../../components/CardInfo";
 import { Header } from "../../components/Header";
-import { OptionComponent } from "../../components/Option";
-import { Transaction } from "../../components/Transactions";
 import { BASE_URL, CallApi } from "../../utils/apiHandler";
 import reload from "../../utils/reload";
 import Chart from 'chart.js/auto';
@@ -9,7 +7,6 @@ import Chart from 'chart.js/auto';
 const page_id = location.search.split('=').at(-1);
 
 const body = document.body;
-const tbody = document.querySelector('tbody');
 const localed = JSON.parse(localStorage.getItem('user'));
 const apiCall = new CallApi(BASE_URL);
 const ctx = document.querySelector('#myChart').getContext('2d');
@@ -17,13 +14,6 @@ const ctx = document.querySelector('#myChart').getContext('2d');
 const place = document.querySelector(".payment-cards");
 const mainSel = document.querySelector('.main_sel');
 const currency_inp = document.querySelector('.currency_inp');
-
-
-function updateCardInfo(wallet) {
-    mainSel.value = wallet.currency;
-    currency_inp.value = wallet.total; 
-    CreateLineChart(wallet.id); 
-}
 
 async function init() {
     body.prepend(Header({ email: localed.email }));
@@ -42,7 +32,7 @@ async function init() {
         currency_inp.value = wallets.data[0].total;
 
        
-        reload(wallets.data, (item) => CardInfo(item, updateCardInfo), place);
+        reload(wallets.data, (item) => CardInfo(item), place);
     }
 
     await CreateLineChart();

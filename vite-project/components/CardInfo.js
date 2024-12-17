@@ -28,9 +28,7 @@ export function CardInfo(item, onCardSelect) {
 
     
     card.onclick = () => {
-        document.querySelectorAll('.card').forEach(card => card.classList.remove('selected'));
-        card.classList.add('selected'); 
-        onCardSelect(item); 
+        location.assign('/pages/walletId/?id=' + item.id)
     };
 
     return card;
